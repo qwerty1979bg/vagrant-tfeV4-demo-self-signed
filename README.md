@@ -10,6 +10,7 @@ task: Install DEMO version of Terraform Enterprise (ex PTFE) v4 with Self Signed
 3. Run the following:
 
 ```
+$ vagrant plugin install vagrant-disksize
 $ vagrant up
 ```
 
@@ -31,7 +32,6 @@ $ vagrant up
 
 Todo:
 
-- [] At least 40GB of disk space on the root volume
 - [] provision script to run TFE installer
 - [] 
 - [] SELinux set to permissive, to run TFE in DEMO mode
@@ -43,4 +43,5 @@ Done:
 - [*] port forward 8800
 - [*] At least 8GB of system memory
 - [*] At least 2 CPU cores
+- [*] At least 40GB of disk space on the root volume
 
