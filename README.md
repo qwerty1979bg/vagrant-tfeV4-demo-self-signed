@@ -32,8 +32,6 @@ $ vagrant up
 Todo:
 
 - [] At least 40GB of disk space on the root volume
-- [] At least 8GB of system memory
-- [] At least 2 CPU cores
 - [] provision script to run TFE installer
 - [] 
 - [] SELinux set to permissive, to run TFE in DEMO mode
@@ -43,4 +41,6 @@ Todo:
 Done:
 - [*] create Vagrantfile with a Ubuntu Bionic VM
 - [*] port forward 8800
+- [*] At least 8GB of system memory
+- [*] At least 2 CPU cores
 
