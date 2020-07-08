@@ -12,6 +12,12 @@ task: Install DEMO version of Terraform Enterprise (ex PTFE) v4 with Self Signed
 ```
 $ vagrant plugin install vagrant-disksize
 $ vagrant up
+
+* open a web browser to http://localhost:8800/
+* Continue the manual set-up according to the guide
+
+When done, do a
+$ vagrant destroy
 ```
 
 * [Installation instructions](https://www.terraform.io/docs/enterprise/install/index.html) / [Pre-flight checklist](https://www.terraform.io/docs/enterprise/before-installing/index.html) / [Refference architecture](https://www.terraform.io/docs/enterprise/before-installing/reference-architecture/index.html)
@@ -32,11 +38,7 @@ $ vagrant up
 
 Todo:
 
-- [] provision script to run TFE installer
 - [] 
-- [] SELinux set to permissive, to run TFE in DEMO mode
-- [] 
-
 
 Done:
 - [*] create Vagrantfile with a Ubuntu Bionic VM
@@ -44,4 +46,6 @@ Done:
 - [*] At least 8GB of system memory
 - [*] At least 2 CPU cores
 - [*] At least 40GB of disk space on the root volume
+- [*] SELinux set to permissive, to run TFE in DEMO mode - not needed, since this is not RedHat / CentOS
+- [*] provision script to run TFE installer
 
