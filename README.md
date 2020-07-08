@@ -34,7 +34,7 @@ $ vagrant destroy
 
 [Linux instance](https://www.terraform.io/docs/enterprise/before-installing/index.html#operating-system-requirements): Ubuntu 18.04
 
-[Hawrdware requirements]https://www.terraform.io/docs/enterprise/before-installing/index.html#hardware-requirements
+[Hardware requirements](https://www.terraform.io/docs/enterprise/before-installing/index.html#hardware-requirements)
 
 Todo:
 
