@@ -17,20 +17,22 @@ $ vagrant plugin install vagrant-disksize
 $ vagrant up
 
 * Open a web browser to http://localhost:8800/
+
 * Continue the manual set-up according to the guide:
-- Hostname: localhost
-- Click on "Use Self-Signed Cert"
-- Select a license file
-- Choose an "Online" installation type and click "Continue"
-- Choose a password for the Admin Console and click "Continue"
-- Make sure all the pre-flight checks are green and click "Continue"
-- Hostname: localhost:8443
-- Installation type: Demo
-- Click "Save"
-- Click "Take me to the Dashboard"
-- Wait until the application finished loading (might need to refresh the Dashboard page, if it appears stuck)
-- Click on the "Open" link, that takes you to the TFE account creation page.
-- Create the main admin user
+ - Hostname: localhost
+ - Click on "Use Self-Signed Cert"
+ - Select a license file
+ - Choose an "Online" installation type and click "Continue"
+ - Choose a password for the Admin Console and click "Continue"
+ - Make sure all the pre-flight checks are green and click "Continue"
+ - Hostname: localhost:8443
+ - Installation type: Demo
+ - Click "Save"
+ - Click "Take me to the Dashboard"
+ - Wait until the application finished loading (might need to refresh the Dashboard page, if it appears stuck)
+ - Click on the "Open" link, that takes you to the TFE account creation page
+ - Create the main TFE admin user
+
 * (As TFE may fail to properly redirect) Open a web browser to https://localhost:8443/app
 
 * Play around with your own TFE instance
