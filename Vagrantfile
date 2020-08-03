@@ -23,7 +23,12 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine and only allow access
   # via 127.0.0.1 to disable public access
   # config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
+
+  # Forward the Replicated Dashboard port - TCP 8800
   config.vm.network "forwarded_port", guest: 8800, host: 8800, host_ip: "127.0.0.1"
+
+  # Forwarding the TFE standard HTTPS port - TCP 443 to TCP 8443 on the host
+  config.vm.network "forwarded_port", guest: 443, host: 8443, host_ip: "127.0.0.1"
 
   # Set up the desired root disk size - requires the "vagrant-disksize" plugin
   config.disksize.size = '50GB'
@@ -45,7 +50,5 @@ end
   # documentation for more information about their specific syntax and use.
  config.vm.provision "shell", inline: <<-SHELL
    curl https://install.terraform.io/ptfe/stable | sudo bash
-#   apt-get update
-#   apt-get install -y apache2
  SHELL
 end

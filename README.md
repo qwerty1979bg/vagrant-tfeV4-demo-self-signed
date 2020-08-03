@@ -2,8 +2,11 @@
 
 task: Install DEMO version of Terraform Enterprise (ex PTFE) v4 with Self Signed Certificate - Vagrant
 
+note: The following instructions are true for v202007-2 of Terraform Enterprise. Adapt as needed for other versions.
+
 ## Usage
 
+0. [Get a Terraform Enterprice license](https://www.hashicorp.com/request-demo/terraform/)
 1. [Install Vagrant](https://www.vagrantup.com/docs/installation/)
 2. Clone this repository and `cd` into it.
 
@@ -13,8 +16,24 @@ task: Install DEMO version of Terraform Enterprise (ex PTFE) v4 with Self Signed
 $ vagrant plugin install vagrant-disksize
 $ vagrant up
 
-* open a web browser to http://localhost:8800/
-* Continue the manual set-up according to the guide
+* Open a web browser to http://localhost:8800/
+* Continue the manual set-up according to the guide:
+- Hostname: localhost
+- Click on "Use Self-Signed Cert"
+- Select a license file
+- Choose an "Online" installation type and click "Continue"
+- Choose a password for the Admin Console and click "Continue"
+- Make sure all the pre-flight checks are green and click "Continue"
+- Hostname: localhost:8443
+- Installation type: Demo
+- Click "Save"
+- Click "Take me to the Dashboard"
+- Wait until the application finished loading (might need to refresh the Dashboard page, if it appears stuck)
+- Click on the "Open" link, that takes you to the TFE account creation page.
+- Create the main admin user
+* (As TFE may fail to properly redirect) Open a web browser to https://localhost:8443/app
+
+* Play around with your own TFE instance
 
 When done, do a
 $ vagrant destroy
